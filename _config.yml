@@ -105,7 +105,7 @@ deploy:
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm') }}"
   repo:
     github: https://github.com/yankewei/yankewei.github.io.git
-  branch: main
+  branch: gh-pages
 
 
 jsonContent:
