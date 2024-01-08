@@ -104,7 +104,7 @@ deploy:
   type: git
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm') }}"
   repo:
-    github: git@github.com:yankewei/yankewei.github.com.git
+    github: https://github.com/yankewei/yankewei.github.io.git
   branch: main
 
 
