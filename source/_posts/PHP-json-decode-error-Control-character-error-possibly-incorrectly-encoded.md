@@ -4,6 +4,8 @@ date: 2024-01-11 10:06:26
 tags:
   - PHP
   - JSON
+category:
+  - 编程  
 ---
 PHP 在进行 json 解析的时候会有很多报错，如果解析失败，可以使用`json_last_error_msg`方法，它会返回一个解析失败的原因。原因之一就有一个`JSON_ERROR_CTRL_CHAR`，表示`Control character error, possibly incorrectly encoded`，提示有可能 JSON 对象中包含了控制字符串。下面是一个例子：
 ```
