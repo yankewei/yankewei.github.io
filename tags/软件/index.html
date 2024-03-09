@@ -21,7 +21,7 @@
     <meta name="description" content="">
     <meta property="og:type" content="website">
 <meta property="og:title" content="Yankewei 的博客">
-<meta property="og:url" content="httpd://yankewei.github.io/tags/JSON/index.html">
+<meta property="og:url" content="httpd://yankewei.github.io/tags/软件/index.html">
 <meta property="og:site_name" content="Yankewei 的博客">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Kewei Yan">
@@ -429,31 +429,29 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/2024/01/11/PHP-json-decode-error-Control-character-error-possibly-incorrectly-encoded/">
+            <a class="abstract-title" href="/2024/03/09/brew-install-%E4%B9%8B%E5%90%8E%E6%8F%90%E7%A4%BA-command-not-found/">
                 
-                <span class="abstract-title-text">PHP json_decode error: Control character error, possibly incorrectly encoded</span>
+                <span class="abstract-title-text">brew install 之后提示 command not found</span>
             </a>
             <div class="abstract-content">
-                PHP 在进行 json 解析的时候会有很多报错，如果解析失败，可以使用json_last_error_msg方法，它会返回一个解析失败的原因。原因之一就有一个JSON_ERROR_CTRL_CHAR，表示Control character error, possibly incorrectly encoded，提示有可能 JSON 对象中包含了控制字符串。下面是一个例子：
-123	&#123;	&quot;hello&quot;:&quot;	world&quot;&#125;
-
-看不出来，可以复制这段文本，使用 vim 打开，然后设置显示隐藏字符,可以在命令模式下，输入:set li...
+                使用 Mac 的同学大部分应该都用过 homebrew，安装软件相当的方便，不需要我们处理软件的依赖关系。但是有时候在安装完后执行命令却提示 command not found，昨天就遇到了这个问题，在 brew install qcachegrind 之后执行 qcachegrind 提示 command not found，调查了一番后顺便记录下来。
+brew 安装的目录是否在 $PATH 中brew 安装后的软件都会生成一个软链接，M1 的 MacOS 会在 /opt/homebrew/bin, 这个目录下你可以看到所有使用 brew 安装后的提供了命令行的软件，比如我安装了 qc...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
                 <div class="abstract-date" title="Last updated: 2024/03/09">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/01/11</span>
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/03/09</span>
                 </div>
                 <!-- tags -->
                 
                     <div class= abstract-tags >
     
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="PHP">PHP</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="MacOS">MacOS</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="JSON">JSON</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="软件">软件</a>
     
 </div>
 
